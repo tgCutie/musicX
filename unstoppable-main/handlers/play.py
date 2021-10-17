@@ -251,23 +251,22 @@ async def play(_, message: Message):
 
         keyboard = InlineKeyboardMarkup(
                 [   
-               
+             
                     [
-                        InlineKeyboardButton(
-                            text="⧐ ʏᴏᴜᴛᴜʙᴇ ⧏",
-                            url=f"{url}"),
-                        InlineKeyboardButton(
-                            text="⧐ ᴅᴏᴡɴʟᴏᴀᴅ ⧏",
-                            url=f"{durl}")
-
-                    ],
-                    [    InlineKeyboardButton(
-                              text="sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ",
-                              url=f"http://t.me/desk_bG"
-                    ),]
+        InlineKeyboardButton(
+            text="sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="http://t.me/desk_bg"),
+    ],
+    
+    [
+        InlineKeyboardButton(
+            text="⧐ ʏᴏᴜᴛᴜʙᴇ ⧏", url=f"{url}"
+        ),
+        InlineKeyboardButton(text="⧐ ᴅᴏᴡɴʟᴏᴀᴅ ⧏",url=f"{durl}"),
+    ],
                     
+                 
                 ]
-            )
+            
         
         if (dur / 300) > DURATION_LIMIT:
              await lel.edit(f"⚡️ Unable to play video more than {DURATION_LIMIT} 😞")
