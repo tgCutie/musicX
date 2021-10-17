@@ -72,7 +72,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     draw.text(
         (190, 590), f"ᴅᴜʀᴀᴛɪᴏɴ: {duration}", (400, 255, 255), font=font
     )
-    )
+   
     img.save("final.png")
     os.remove("temp.png")
     os.remove("background.png")
