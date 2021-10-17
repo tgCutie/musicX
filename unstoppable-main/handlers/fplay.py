@@ -17,7 +17,7 @@ from helpers.gets import get_url, get_file_name
 @errors
 async def stream(_, message: Message):
 
-    lel = await message.reply("ıllıllı **Ꭾяσ¢єѕѕιηg**ıllıllı  ♩✌")
+    lel = await message.reply("Processing...♫︎")
     sender_id = message.from_user.id
     sender_name = message.from_user.first_name
 
